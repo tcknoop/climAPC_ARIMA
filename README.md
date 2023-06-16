@@ -36,7 +36,7 @@ The ARIMA model can be initialised and fitted with the **construct_ARIMA()** fun
 One such method example would be fitting the model only to part of the data and comparing the prediction to the rest of the data this can be done with the **forecast_ARIMA()** function. In-sample predictions can be made by giving a **predict_index** in order to not start the forecast from the last value, but shifted forwards. With monthly data for example you would need a **predict_index = 12** to start one year earlier. This way the prediction can be compared to some real data and the root mean square error can be calculated. Standard forecasts into the future can be made by not setting a predict index (or setting it to 0).    
 
 ## Seasonal ARIMA
-In order to better predict seasonal time series data, the SARIMA adds 4 new Parameters to an ARIMA model. The first three are (P,D,Q) but as seasonal parameters, the last one (m) is the number of datapoints per year. Finding (P,D,Q) is similar to finding the initial (p,d,q), more can be found [here] (https://otexts.com/fpp2/seasonal-arima.html). 
+In order to better predict seasonal time series data, the SARIMA adds 4 new Parameters to an ARIMA model. The first three are (P,D,Q) but as seasonal parameters, the last one (m) is the number of datapoints per year. Finding (P,D,Q) is similar to finding the initial (p,d,q), more can be found [here](https://otexts.com/fpp2/seasonal-arima.html). 
 
 
 
